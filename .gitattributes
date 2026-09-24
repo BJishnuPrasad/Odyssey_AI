@@ -1,0 +1,2 @@
+southern-zone-260806.osm.pbf filter=lfs diff=lfs merge=lfs -text
+Data/processed/osm/thanjavur_roads.geojson filter=lfs diff=lfs merge=lfs -text

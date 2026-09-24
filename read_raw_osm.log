@@ -1,0 +1,12 @@
+Inspecting Data/raw/osm/thanjavur_osm_alt.geojson:
+  Size: 0.01 MB
+  Keys: ['type', 'generator', 'copyright', 'timestamp', 'features']
+  Number of features: 11
+  Sample tags in first 1000 features: ['name:ka', 'name:or', 'tourism', 'alt_name:es', 'name:new', 'whc:criteria', 'name:te', 'alt_name:mai', 'name:kn', 'alt_name:ml', 'name:de', 'heritage', 'name:sr', 'wikimedia_commons', 'amenity', 'protect_class', 'alt_name:en', 'name:eo', 'name:pt', 'name:zh', 'name:nl', 'heritage:operator', 'name:uk', 'name:hi', 'name:fr', 'name:es', 'wheelchair', 'name:ar', 'alt_name:ka', 'whc:inscription_date']
+==================================================
+Inspecting Data/raw/osm/thanjavur_osm_full.geojson:
+  Size: 40.09 MB
+  Keys: ['type', 'generator', 'copyright', 'timestamp', 'features']
+  Number of features: 41864
+  Sample tags in first 1000 features: ['old_ref', 'covered', 'maxweight:signed', 'version', 'horse', 'smoothness', 'source:surface', 'maxspeed', 'area', 'frontage_road', 'changeset', 'lane_markings', 'oneway', 'junction', 'sidewalk', 'uid', 'level', 'source', 'access', 'width', 'ta:name', '@id', 'name:etymology:wikidata', 'official_name', 'public_transport', 'source:lanes', 'layer', 'dual_carriageway', 'highway', 'motorroad']
+==================================================

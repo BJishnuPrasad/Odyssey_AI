@@ -1,0 +1,7 @@
+Python Path: C:\Projects\Odyssey AI\.venv\Scripts\python.exe
+geopandas: OK
+pandas: OK
+rasterio: OK
+scikit-learn: OK
+richdem error: No module named 'richdem'
+pyrosm error: No module named 'pyrosm'

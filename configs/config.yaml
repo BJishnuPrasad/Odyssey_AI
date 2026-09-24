@@ -1,0 +1,100 @@
+# ==============================================================================
+# Odyssey AI – Thanjavur Archaeological Site Suitability
+# Central Configuration
+# ==============================================================================
+
+project:
+  name: "Odyssey AI – Thanjavur Site Suitability"
+  region: "Thanjavur, Tamil Nadu, India"
+  crs: "EPSG:32644"          # UTM Zone 44N – best projected CRS for the region
+  geographic_crs: "EPSG:4326"
+
+# ---------------------------------------------------------------------------
+# Paths (all relative to project root)
+# ---------------------------------------------------------------------------
+paths:
+  root: "."
+
+  raw:
+    dem:        "data/raw/dem"
+    boundary:   "data/raw/boundary"
+    satellite:  "data/raw/satellite"
+    osm:        "data/raw/osm"
+
+  processed:
+    dem:        "data/processed/dem"
+    osm:        "data/processed/osm"
+    satellite:  "data/processed/satellite"
+    features:   "data/processed/features"
+
+  outputs:
+    maps:       "outputs/maps"
+    reports:    "outputs/reports"
+    models:     "outputs/models"
+    exports:    "outputs/exports"
+
+# ---------------------------------------------------------------------------
+# Key Files
+# ---------------------------------------------------------------------------
+files:
+  boundary:          "data/raw/boundary/thanjavur_boundary.geojson"
+  raw_dem:           "data/raw/dem/output_SRTMGL1.tif"
+  dem_processed:     "data/processed/dem/thanjavur_dem.tif"
+  slope:             "data/processed/dem/thanjavur_slope.tif"
+  buildings:         "data/processed/osm/thanjavur_buildings.geojson"
+  waterways:         "data/processed/osm/thanjavur_waterways.geojson"
+  roads:             "data/processed/osm/thanjavur_roads.geojson"
+  landuse:           "data/processed/osm/thanjavur_landuse.geojson"
+  site_features:     "data/processed/features/site_features.csv"
+
+# ---------------------------------------------------------------------------
+# DEM / Terrain Processing
+# ---------------------------------------------------------------------------
+terrain:
+  slope_unit: "degrees"       # "degrees" or "percent"
+  fill_nodata: true
+  resampling: "bilinear"
+
+# ---------------------------------------------------------------------------
+# OSM Extraction Tags
+# ---------------------------------------------------------------------------
+osm:
+  pbf_source: "southern-zone-260806.osm.pbf"
+  layers:
+    buildings:
+      tags: ["building"]
+    waterways:
+      tags: ["waterway", "natural=water", "natural=wetland"]
+    roads:
+      tags: ["highway"]
+    landuse:
+      tags: ["landuse", "leisure", "natural"]
+
+# ---------------------------------------------------------------------------
+# Feature Engineering
+# ---------------------------------------------------------------------------
+features:
+  buffer_distances_m: [100, 250, 500, 1000]      # proximity bands (metres)
+  ndvi_bands: ["B8", "B4"]                        # Sentinel-2 NIR / Red
+  ndwi_bands: ["B3", "B8"]                        # Green / NIR
+
+# ---------------------------------------------------------------------------
+# Model
+# ---------------------------------------------------------------------------
+model:
+  type: "RandomForestClassifier"
+  test_size: 0.2
+  random_state: 42
+  n_estimators: 200
+  max_depth: null
+  cross_validation_folds: 5
+
+# ---------------------------------------------------------------------------
+# Sentinel-2 Acquisition
+# ---------------------------------------------------------------------------
+sentinel2:
+  date_start: "2020-01-01"
+  date_end:   "2020-12-31"
+  cloud_cover_threshold: 20           # percent
+  bands: ["B2","B3","B4","B8","B11","B12"]
+  scale_m: 10

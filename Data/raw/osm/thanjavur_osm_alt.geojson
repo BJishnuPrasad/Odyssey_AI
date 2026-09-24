@@ -1,0 +1,313 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-08-07T05:42:20Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/6668806",
+        "amenity": "place_of_worship",
+        "heritage": "1",
+        "heritage:operator": "whc",
+        "heritage:website": "https://whc.unesco.org/en/list/250/",
+        "mapillary": "815641735737330",
+        "name": "Brihadishwara Temple",
+        "name:en": "Brihadishwara Temple",
+        "name:kn": "ಬೃಹದೀಶ್ವರ ದೇವಾಲಯ",
+        "name:ta": "தஞ்சைப் பெருவுடையார் கோயில்",
+        "religion": "hindu",
+        "tourism": "attraction",
+        "type": "building",
+        "whc:criteria": "(ii)(iii)",
+        "whc:extension": "2004",
+        "whc:inscription_date": "1987",
+        "wheelchair": "no",
+        "wikidata": "Q916943",
+        "wikipedia": "en:Brihadeeswarar Temple",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.1314361,
+          10.7825788
+        ]
+      },
+      "id": "relation/6668806"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/8341173",
+        "building": "yes",
+        "historic": "yes",
+        "name": "Thanjavur Maratha Palace",
+        "name:ml": "തഞ്ചാവൂർ മറാത്ത കൊട്ടാരം",
+        "name:ta": "தஞ்சை மராட்டிய அரண்மனை",
+        "tourism": "attraction",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.1361188,
+          10.7914063
+        ]
+      },
+      "id": "relation/8341173"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/8345043",
+        "amenity": "place_of_worship",
+        "building": "temple",
+        "heritage": "1",
+        "heritage:operator": "whc",
+        "heritage:website": "https://whc.unesco.org/en/list/250/",
+        "name": "Thirumigu Airavateswarar Temple",
+        "religion": "hindu",
+        "tourism": "attraction",
+        "type": "multipolygon",
+        "whc:criteria": "(ii)(iii)",
+        "whc:extension": "2004",
+        "whc:inscription_date": "1987",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.3565521,
+          10.9484001
+        ]
+      },
+      "id": "relation/8345043"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/9762728",
+        "boundary": "protected_area",
+        "heritage": "1",
+        "heritage:operator": "whc",
+        "historic": "archaeological_site",
+        "name": "Great Living Chola Temples",
+        "name:ar": "معابد شولا الكبيرة الحية",
+        "name:en": "Great Living Chola Temples",
+        "name:es": "Grandes templos vivientes cholas",
+        "name:fr": "Les grands temples vivants Chola",
+        "name:ja": "大チョーラ朝寺院群",
+        "name:nl": "Great Living Chola tempels",
+        "name:ru": "Великие храмы империи Чола",
+        "name:zh": "朱罗王朝现存的神庙",
+        "protect_class": "22",
+        "ref:whc": "250bis",
+        "type": "site",
+        "whc:criteria": "(i)(ii)(iii)(iv)",
+        "whc:inscription_date": "1987",
+        "wikidata": "Q695229",
+        "wikipedia": "en:Great Living Chola Temples",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.2896899,
+          10.9941007
+        ]
+      },
+      "id": "relation/9762728"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/104683753",
+        "alt_name:en": "Grand Anicut",
+        "alt_name:uk": "Гранд Анікут",
+        "historic": "yes",
+        "name": "Kallanai",
+        "name:ml": "കല്ലണ",
+        "name:ru": "Калланай",
+        "name:ta": "கல்லணை",
+        "name:te": "కల్లనై డ్యామ్",
+        "name:uk": "Калланай",
+        "waterway": "dam",
+        "wikidata": "Q3534498",
+        "wikipedia": "ta:கல்லணை",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.8181144,
+          10.8303885
+        ]
+      },
+      "id": "way/104683753"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/120390896",
+        "alt_name": "Tanjai Periya Kovil",
+        "alt_name:en": "Big temple",
+        "alt_name:eo": "templo RajaRajeswara",
+        "alt_name:es": "templo RajaRajeswara",
+        "alt_name:fr": "temple de Râjarâjeshvaram",
+        "alt_name:hr": "Rajarajeswaram",
+        "alt_name:id": "Kuil Rajarajeswara",
+        "alt_name:ja": "ラージャラージェーシュヴァラ寺院",
+        "alt_name:ka": "ბრიჰადეესვარარის ტაძარი",
+        "alt_name:kn": "ಬೃಹದೀಶ್ವರ್ ಟೆಂಪಲ್",
+        "alt_name:mai": "बृहदीश्वर मन्दिर",
+        "alt_name:ml": "തിരുവുടയാർ കോവിൽ",
+        "alt_name:new": "बृहदीश्वर",
+        "alt_name:pt": "Peruvudaiyar Koyil",
+        "alt_name:sh": "Rajarajeswaram",
+        "alt_name:ta": "தஞ்சைப் பெரிய கோயில்",
+        "alt_name:zh": "罗阇罗阇希瓦拉神庙",
+        "amenity": "place_of_worship",
+        "building": "temple",
+        "historic": "archaeological_site",
+        "historic:period": "1002",
+        "name": "Brihadeeswara Temple",
+        "name:de": "Brihadishvara-Tempel",
+        "name:en": "Brihadishwara Temple",
+        "name:eo": "templo Brihadisvara",
+        "name:es": "templo Brihadisvara",
+        "name:fr": "temple de Brihadesvara",
+        "name:hi": "बृहदेश्वर मन्दिर",
+        "name:hr": "Brihadishwara",
+        "name:id": "Kuil Brihadiswara",
+        "name:ja": "ブリハディーシュヴァラ寺院",
+        "name:ka": "ბრიჰადეშვარას ტაძარი",
+        "name:kn": "ಬೃಹದೀಶ್ವರ ದೇವಾಲಯ",
+        "name:ko": "브리하디스와라 사원",
+        "name:mai": "बृहदेश्वर मन्दिर",
+        "name:ml": "ബൃഹദീശ്വരക്ഷേത്രം",
+        "name:new": "बृहदेश्वर",
+        "name:nl": "Brihadisvaratempel",
+        "name:nn": "Brihadisjvara-tempelet",
+        "name:or": "ବୃହଦେଶ୍ଵର ମନ୍ଦିର",
+        "name:pt": "templo Brihadeeswarar",
+        "name:ro": "Templul Brihadeeswarar",
+        "name:ru": "Брахадисва́ра",
+        "name:sa": "बृहदीश्वरदेवालयः",
+        "name:sh": "Hram Brihadishwara",
+        "name:sr": "Брихадесварар храм",
+        "name:sv": "Brihadisvaratemplet",
+        "name:ta": "தஞ்சைப் பெருவுடையார் கோயில்",
+        "name:te": "బృహదీశ్వర ఆలయం",
+        "name:uk": "Брахідеешварар",
+        "name:zh": "布里哈迪希瓦拉神庙",
+        "religion": "hindu",
+        "tourism": "attraction",
+        "wheelchair": "no",
+        "wikidata": "Q916943",
+        "wikimedia_commons": "Category:Brihadisvara Temple",
+        "wikipedia": "ta:தஞ்சைப் பெருவுடையார் கோயில்",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.1313962,
+          10.7825788
+        ]
+      },
+      "id": "way/120390896"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/555516027",
+        "historic": "castle",
+        "name": "Manora Fort",
+        "wikidata": "Q13646574",
+        "wikimedia_commons": "Category:Manora Fort, Thanjavur",
+        "wikipedia": "en:Manora Fort, Thanjavur",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.3048753,
+          10.2688942
+        ]
+      },
+      "id": "way/555516027"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/592802648",
+        "building": "yes",
+        "historic": "yes",
+        "name": "Gopuram",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.3580001,
+          10.9484051
+        ]
+      },
+      "id": "way/592802648"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3688301041",
+        "historic": "memorial",
+        "name": "Karikal Chozhan Mandapam"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.8199818,
+          10.8331021
+        ]
+      },
+      "id": "node/3688301041"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11831919109",
+        "historic": "memorial",
+        "name": "Great King Raja Raja Chozhan I Memorial"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.3674909,
+          10.9151126
+        ]
+      },
+      "id": "node/11831919109"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12078431209",
+        "historic": "wayside_shrine",
+        "name": "Punitha Vanattha Chinnappar Aalayam",
+        "name:ta": "புனித வனத்த சின்னப்பர் ஆலயம்",
+        "religion": "christian",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.0782741,
+          10.9193587
+        ]
+      },
+      "id": "node/12078431209"
+    }
+  ]
+}
