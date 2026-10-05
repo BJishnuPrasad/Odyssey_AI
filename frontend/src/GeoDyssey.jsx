@@ -21,6 +21,7 @@ function Metric({ icon: Icon, label, value, unit, note }) { return <div classNam
 export default function GeoDyssey() {
   const [tab, setTab] = useState(() => savedRole() === 'student' ? 'library' : 'explore')
   const [role, setRole] = useState(savedRole)
+  const [hostedDemo, setHostedDemo] = useState(false)
   const [detailId, setDetailId] = useState(null)
   const [glossaryQuery, setGlossaryQuery] = useState('')
   function openSite(id) { setDetailId(id); setTab('site') }
@@ -117,8 +118,9 @@ export default function GeoDyssey() {
       <div className="sidebar-bottom"><div><Database size={15} /> Local workspace</div><p>SQLite · Files stored on your device</p><small>GeoDyssey / Research edition 1.0</small></div>
     </aside>
     <div className="main-shell">
-      <header className="topbar"><div><span>Workspace</span><ChevronRight size={14} /><strong>{(tab === 'site' ? 'Site 3D & subsurface' : nav.find(n => n[0] === tab)?.[2])}</strong></div><div className="topbar-right"><ApiStatus onReconnect={load} /><span className="avatar">GP</span></div></header>
+      <header className="topbar"><div><span>Workspace</span><ChevronRight size={14} /><strong>{(tab === 'site' ? 'Site 3D & subsurface' : nav.find(n => n[0] === tab)?.[2])}</strong></div><div className="topbar-right"><ApiStatus onReconnect={load} onDemo={setHostedDemo} /><span className="avatar">GP</span></div></header>
       <main>
+        {hostedDemo && <div className="notice" role="note"><Info size={18} /><p><strong>Free demonstration workspace.</strong> Shared by all visitors. Download new results before leaving: uploads and new runs reset when the server restarts or sleeps. Bundled public evidence is restored automatically. The first visit after inactivity can take about a minute.</p></div>}
         <div className="role-switch"><label htmlFor="workspace-mode">Workspace mode</label><select id="workspace-mode" value={role} onChange={e => changeRole(e.target.value)}><option value="practitioner">Practitioner</option><option value="student">Researcher / Student</option></select></div>
         <div className="page-heading"><div><div className="eyebrow">THANJAVUR RESEARCH ATLAS <span>11° N / 79° E</span></div><h1>{tab === 'explore' ? 'Read the landscape.' : (tab === 'site' ? 'Site 3D & subsurface' : nav.find(n => n[0] === tab)?.[2])}</h1><p>{tab === 'explore' ? 'Explore the connections between terrain, water and human settlement.' : 'Trace every insight back to its evidence.'}</p></div><button className="primary" disabled={loading || submitting || active} onClick={() => setDialog(true)}><Play size={15} />{active ? 'Analysis in progress' : 'New analysis'}<ArrowUpRight size={16} /></button></div>
         {(error || runError) && <div className="error" role="alert"><AlertCircle size={18} /><span>{error || runError}</span><button onClick={load}>Retry</button><button aria-label="Dismiss error" onClick={() => { setError(''); setRunError('') }}><X size={16} /></button></div>}

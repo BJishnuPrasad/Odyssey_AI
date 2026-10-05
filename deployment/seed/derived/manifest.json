@@ -1,0 +1,11 @@
+{
+  "source": "southern-zone-260806.osm.pbf",
+  "source_sha256": "9c3e788e6bc6a57a9d3f41a6e0efc4e51423e21d4e6734476b36ef22a112d17e",
+  "source_timestamp": "2026-08-06T20:21:21Z",
+  "extracted_at": "2026-10-01T16:51:54.246776+00:00",
+  "invalid_geometries": 3,
+  "water_features": 1425,
+  "landuse_features": 832,
+  "attribution": "OpenStreetMap contributors, ODbL",
+  "method": "district intersection; water-specific tags; assembled multipolygons"
+}

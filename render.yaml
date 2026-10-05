@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: geodyssey
+    runtime: docker
+    repo: https://github.com/BJishnuPrasad/Odyssey_AI
+    branch: main
+    region: singapore
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    autoDeployTrigger: off
+    numInstances: 1
+    maxShutdownDelaySeconds: 300
+    envVars:
+      - key: GEODYSSEY_RUNTIME
+        value: /tmp/geodyssey
+      - key: GDAL_CACHEMAX
+        value: '64'
+      - key: PYTHONUNBUFFERED
+        value: '1'
+      - key: GEODYSSEY_HOSTED_DEMO
+        value: '1'

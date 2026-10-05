@@ -1,4 +1,5 @@
 import logging
+import os
 import threading
 import uuid
 from functools import lru_cache
@@ -72,7 +73,7 @@ def worker(run_id, parameters):
 
 @app.get("/api/health")
 def health():
-    return {"status": "ok", "version": "1.0.0", "database": "SQLite", "region": "Thanjavur"}
+    return {"status": "ok", "version": "1.0.0", "database": "SQLite", "region": "Thanjavur", "hosted_demo": os.environ.get("GEODYSSEY_HOSTED_DEMO") == "1"}
 
 
 @app.get("/api/catalog")

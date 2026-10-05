@@ -1,0 +1,212 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.1314361,
+          10.7825788
+        ]
+      },
+      "properties": {
+        "name": "Brihadishwara Temple",
+        "osm_id": "relation/6668806",
+        "wikidata": "Q916943",
+        "category": "1",
+        "location_quality": "OSM representative point; not field verified",
+        "source": "OpenStreetMap / supplied repository",
+        "elevation_m": 63.0398,
+        "slope_degrees": 0.47,
+        "water_distance_m": 0.0,
+        "terrain_score": 0.6047,
+        "terrain_zone": "Moderate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.1361188,
+          10.7914063
+        ]
+      },
+      "properties": {
+        "name": "Thanjavur Maratha Palace",
+        "osm_id": "relation/8341173",
+        "wikidata": null,
+        "category": "yes",
+        "location_quality": "OSM representative point; not field verified",
+        "source": "OpenStreetMap / supplied repository",
+        "elevation_m": 55.9588,
+        "slope_degrees": 0.44,
+        "water_distance_m": 353.5534,
+        "terrain_score": 0.555,
+        "terrain_zone": "Moderate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.3565521,
+          10.9484001
+        ]
+      },
+      "properties": {
+        "name": "Thirumigu Airavateswarar Temple",
+        "osm_id": "relation/8345043",
+        "wikidata": null,
+        "category": "1",
+        "location_quality": "OSM representative point; not field verified",
+        "source": "OpenStreetMap / supplied repository",
+        "elevation_m": null,
+        "slope_degrees": null,
+        "water_distance_m": 250.0,
+        "terrain_score": null,
+        "terrain_zone": "Insufficient data"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.8181144,
+          10.8303885
+        ]
+      },
+      "properties": {
+        "name": "Kallanai",
+        "osm_id": "way/104683753",
+        "wikidata": "Q3534498",
+        "category": "yes",
+        "location_quality": "OSM representative point; not field verified",
+        "source": "OpenStreetMap / supplied repository",
+        "elevation_m": 61.1048,
+        "slope_degrees": 0.3979,
+        "water_distance_m": 0.0,
+        "terrain_score": 0.7682,
+        "terrain_zone": "High"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.3048753,
+          10.2688942
+        ]
+      },
+      "properties": {
+        "name": "Manora Fort",
+        "osm_id": "way/555516027",
+        "wikidata": "Q13646574",
+        "category": "castle",
+        "location_quality": "OSM representative point; not field verified",
+        "source": "OpenStreetMap / supplied repository",
+        "elevation_m": 3.3935,
+        "slope_degrees": 0.6735,
+        "water_distance_m": 0.0,
+        "terrain_score": 0.6489,
+        "terrain_zone": "Moderate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.3580001,
+          10.9484051
+        ]
+      },
+      "properties": {
+        "name": "Gopuram",
+        "osm_id": "way/592802648",
+        "wikidata": null,
+        "category": "yes",
+        "location_quality": "OSM representative point; not field verified",
+        "source": "OpenStreetMap / supplied repository",
+        "elevation_m": null,
+        "slope_degrees": null,
+        "water_distance_m": 0.0,
+        "terrain_score": null,
+        "terrain_zone": "Insufficient data"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.8199818,
+          10.8331021
+        ]
+      },
+      "properties": {
+        "name": "Karikal Chozhan Mandapam",
+        "osm_id": "node/3688301041",
+        "wikidata": null,
+        "category": "memorial",
+        "location_quality": "OSM representative point; not field verified",
+        "source": "OpenStreetMap / supplied repository",
+        "elevation_m": 64.195,
+        "slope_degrees": 0.2466,
+        "water_distance_m": 0.0,
+        "terrain_score": 0.6029,
+        "terrain_zone": "Moderate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.3674909,
+          10.9151126
+        ]
+      },
+      "properties": {
+        "name": "Great King Raja Raja Chozhan I Memorial",
+        "osm_id": "node/11831919109",
+        "wikidata": null,
+        "category": "memorial",
+        "location_quality": "OSM representative point; not field verified",
+        "source": "OpenStreetMap / supplied repository",
+        "elevation_m": null,
+        "slope_degrees": null,
+        "water_distance_m": 250.0,
+        "terrain_score": null,
+        "terrain_zone": "Insufficient data"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.0782741,
+          10.9193587
+        ]
+      },
+      "properties": {
+        "name": "Punitha Vanattha Chinnappar Aalayam",
+        "osm_id": "node/12078431209",
+        "wikidata": null,
+        "category": "wayside_shrine",
+        "location_quality": "OSM representative point; not field verified",
+        "source": "OpenStreetMap / supplied repository",
+        "elevation_m": 42.5185,
+        "slope_degrees": 0.7551,
+        "water_distance_m": 0.0,
+        "terrain_score": 0.6475,
+        "terrain_zone": "Moderate"
+      }
+    }
+  ]
+}

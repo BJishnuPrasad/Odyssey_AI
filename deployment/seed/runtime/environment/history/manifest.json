@@ -1,0 +1,52 @@
+{
+  "id": "history",
+  "title": "Historical landscape & water change",
+  "status": "available",
+  "timescale": "Long term",
+  "retrieved_at": "2026-10-04T11:44:14.099387+00:00",
+  "observed_at": "1984–2024",
+  "records": 2,
+  "sources": [
+    {
+      "url": "https://s3.waw4-1.cloudferro.com/swift/v1/global-surface-water/download2024/Aggregated/VER1-5/occurrence/occurrence_70E_20N_v1_5_2024.tif",
+      "sha256": "18f33dbea8e0456ea647c6b600c4ebc1cb941f0f03b37ed1e99b02296d3b8cbe",
+      "version": "JRC GSW 1.5",
+      "period": "1984–2024"
+    },
+    {
+      "url": "https://s3.waw4-1.cloudferro.com/swift/v1/global-surface-water/download2024/Aggregated/VER1-5/transitions/transitions_70E_20N_v1_5_2024.tif",
+      "sha256": "2230e2f8688507da8e1b985bce3b06b1cdc46d77dacf9d6ec0d5616df917be56",
+      "version": "JRC GSW 1.5",
+      "period": "1984–2024"
+    }
+  ],
+  "layers": [
+    {
+      "id": "occurrence",
+      "title": "Water occurrence · 1984–2024",
+      "file": "history/occurrence.tif",
+      "units": "%",
+      "range": [
+        0,
+        100
+      ],
+      "note": "Landsat-derived JRC v1.5, 1984–2024. Source: EC JRC/Google. Satellite-era water change does not establish an ancient river course.",
+      "coverage_percent": 100.0,
+      "sha256": "9fcf91ab8cec919faa2a6c8a9e7ae1b75853b0f60156b4748c5b746c00b8b1f5"
+    },
+    {
+      "id": "transitions",
+      "title": "Historical water transitions",
+      "file": "history/transitions.tif",
+      "units": "class",
+      "range": [
+        0,
+        10
+      ],
+      "note": "Landsat-derived JRC v1.5, 1984–2024. Source: EC JRC/Google. Satellite-era water change does not establish an ancient river course.",
+      "coverage_percent": 100.0,
+      "sha256": "ac76810b129002971d67d5dc65f175c0bd3cb6efaf7fb0bc7fe28f274ce20752"
+    }
+  ],
+  "note": "Georeferenced JRC historical water maps. Lost-water classes are leads for landscape investigation, not confirmed palaeochannels. Older maps and dated field evidence can be imported separately."
+}

@@ -1,0 +1,75 @@
+{
+  "id": "soil",
+  "title": "Soil & infiltration screening",
+  "status": "available",
+  "timescale": "Context",
+  "note": "SoilGrids 250 m surface-soil predictions, 0–5 cm. Infiltration indicator = sand/(sand+clay), an uncalibrated texture proxy, not permeability, infiltration rate or storage capacity. Structure, compaction, roots and management are unobserved.",
+  "observed_at": "Model climatological context; not a dated field observation",
+  "retrieved_at": "2026-10-04T11:50:36.271693+00:00",
+  "records": 52655,
+  "sources": [
+    {
+      "coverage": "sand_0-5cm_mean",
+      "url": "https://maps.isric.org/mapserv?map=%2Fmap%2Fsand.map&SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=sand_0-5cm_mean&FORMAT=image%2Ftiff&SUBSET=X%288666000%2C8772500%29&SUBSET=Y%281128250%2C1245500%29",
+      "sha256": "2942ad6480985de889fbcdd4e57be3fb9ff6f6b50d2ba3d497d93fa0b883b2c4",
+      "divisor": 10,
+      "native_crs": "+proj=igh +datum=WGS84 +units=m +no_defs"
+    },
+    {
+      "coverage": "silt_0-5cm_mean",
+      "url": "https://maps.isric.org/mapserv?map=%2Fmap%2Fsilt.map&SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=silt_0-5cm_mean&FORMAT=image%2Ftiff&SUBSET=X%288666000%2C8772500%29&SUBSET=Y%281128250%2C1245500%29",
+      "sha256": "c504dd59245d9c0d327745fbbc09cdd0395891a8c70c4cd8ffb9710a0bb28f64",
+      "divisor": 10,
+      "native_crs": "+proj=igh +datum=WGS84 +units=m +no_defs"
+    },
+    {
+      "coverage": "clay_0-5cm_mean",
+      "url": "https://maps.isric.org/mapserv?map=%2Fmap%2Fclay.map&SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=clay_0-5cm_mean&FORMAT=image%2Ftiff&SUBSET=X%288666000%2C8772500%29&SUBSET=Y%281128250%2C1245500%29",
+      "sha256": "301b667164e994d350c7d82d1f7487a1ed30edbd2a8b2832a5aacfb7984680f5",
+      "divisor": 10,
+      "native_crs": "+proj=igh +datum=WGS84 +units=m +no_defs"
+    },
+    {
+      "coverage": "bdod_0-5cm_mean",
+      "url": "https://maps.isric.org/mapserv?map=%2Fmap%2Fbdod.map&SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=bdod_0-5cm_mean&FORMAT=image%2Ftiff&SUBSET=X%288666000%2C8772500%29&SUBSET=Y%281128250%2C1245500%29",
+      "sha256": "88ffa285f72301b237b5f0e1139d4ea286d10c310a7c8e66cb9bd0812af8a355",
+      "divisor": 100,
+      "native_crs": "+proj=igh +datum=WGS84 +units=m +no_defs"
+    },
+    {
+      "coverage": "soc_0-5cm_mean",
+      "url": "https://maps.isric.org/mapserv?map=%2Fmap%2Fsoc.map&SERVICE=WCS&VERSION=2.0.1&REQUEST=GetCoverage&COVERAGEID=soc_0-5cm_mean&FORMAT=image%2Ftiff&SUBSET=X%288666000%2C8772500%29&SUBSET=Y%281128250%2C1245500%29",
+      "sha256": "f34cea54e4ea9f51c7bfeb9e3d92541a21f121db2f330fc3a054f0a86ff3d921",
+      "divisor": 10,
+      "native_crs": "+proj=igh +datum=WGS84 +units=m +no_defs"
+    }
+  ],
+  "layers": [
+    {
+      "id": "clay",
+      "title": "Surface soil clay",
+      "file": "soil/clay.tif",
+      "units": "%",
+      "range": [
+        0,
+        100
+      ],
+      "note": "SoilGrids 250 m surface-soil predictions, 0–5 cm. Infiltration indicator = sand/(sand+clay), an uncalibrated texture proxy, not permeability, infiltration rate or storage capacity. Structure, compaction, roots and management are unobserved.",
+      "coverage_percent": 96.01,
+      "sha256": "44c3e8997d3f181f29c5db4ccdb0e3ba0a18e208307c320e1036c80c1179be2c"
+    },
+    {
+      "id": "infiltration",
+      "title": "Texture infiltration indicator",
+      "file": "soil/infiltration.tif",
+      "units": "dimensionless",
+      "range": [
+        0,
+        1
+      ],
+      "note": "SoilGrids 250 m surface-soil predictions, 0–5 cm. Infiltration indicator = sand/(sand+clay), an uncalibrated texture proxy, not permeability, infiltration rate or storage capacity. Structure, compaction, roots and management are unobserved.",
+      "coverage_percent": 96.01,
+      "sha256": "e45321a01617bd7189222fdd1bab7710ccc5d733eaf1301818270a0275448e4e"
+    }
+  ]
+}

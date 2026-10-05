@@ -2,6 +2,10 @@
 
 A local React + FastAPI workspace for exploring terrain, mapped water and heritage context. Adapted from `BJishnuPrasad/Odyssey_AI` at `6946a64`. This implementation replaces the disconnected demonstration dashboard with real, versioned analysis results.
 
+## Free Render deployment
+
+[Deploy the free demonstration](https://render.com/deploy?repo=https://github.com/BJishnuPrasad/Odyssey_AI). Read the [setup and free-tier limitations](docs/RENDER.md): the service sleeps and new uploads/results are temporary. No paid disk or database is configured.
+
 ## Start on this computer
 
 The environment, dependencies, OSM extracts and production frontend have already been installed. Open **Start-GeoDyssey.cmd** in this folder and visit **http://127.0.0.1:8000**. If a server is already running there, use it rather than starting another. API documentation is at `/docs`.

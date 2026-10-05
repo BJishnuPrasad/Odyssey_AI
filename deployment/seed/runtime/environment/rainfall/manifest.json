@@ -1,0 +1,109 @@
+{
+  "id": "rainfall",
+  "title": "Rainfall time series",
+  "status": "available",
+  "timescale": "Short term",
+  "note": "Bias-corrected reanalysis precipitation at coarse meteorological grid cells (approximately 0.5° × 0.625°), not local rain-gauge observations. UTC daily totals; incomplete months are not totalled.",
+  "observed_at": "2024-01-01 / 2025-12-31",
+  "retrieved_at": "2026-10-04T11:38:20.076225+00:00",
+  "records": 2924,
+  "sources": [
+    {
+      "url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=PRECTOTCORR&community=AG&longitude=79.0&latitude=10.5&start=20240101&end=20251231&format=JSON&time-standard=UTC",
+      "sha256": "e33f1458c44323763d6cb85342ee28cc6511bb1f6e88bb4f9e8c32cb4cd47bb3",
+      "header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.0",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "UTC",
+        "start": "20240101",
+        "end": "20251231"
+      },
+      "parameters": {
+        "PRECTOTCORR": {
+          "units": "mm/day",
+          "longname": "Precipitation Corrected"
+        }
+      }
+    },
+    {
+      "url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=PRECTOTCORR&community=AG&longitude=79.0&latitude=11.0&start=20240101&end=20251231&format=JSON&time-standard=UTC",
+      "sha256": "eee8cc47dbbc375607ab13e0880e2bf529e74c604294bdcc361ad87043fcac4d",
+      "header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.0",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "UTC",
+        "start": "20240101",
+        "end": "20251231"
+      },
+      "parameters": {
+        "PRECTOTCORR": {
+          "units": "mm/day",
+          "longname": "Precipitation Corrected"
+        }
+      }
+    },
+    {
+      "url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=PRECTOTCORR&community=AG&longitude=79.625&latitude=10.5&start=20240101&end=20251231&format=JSON&time-standard=UTC",
+      "sha256": "b61cdc29148502ccd1076bc9d4a2b02c2f614a7addff25e8f5cd7bcf43e95f54",
+      "header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.0",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "UTC",
+        "start": "20240101",
+        "end": "20251231"
+      },
+      "parameters": {
+        "PRECTOTCORR": {
+          "units": "mm/day",
+          "longname": "Precipitation Corrected"
+        }
+      }
+    },
+    {
+      "url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=PRECTOTCORR&community=AG&longitude=79.625&latitude=11.0&start=20240101&end=20251231&format=JSON&time-standard=UTC",
+      "sha256": "bae877dfe77ece53b6728abf83fd06a218e3f8e2c5dd80499d2cf7c535150f14",
+      "header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.0",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "UTC",
+        "start": "20240101",
+        "end": "20251231"
+      },
+      "parameters": {
+        "PRECTOTCORR": {
+          "units": "mm/day",
+          "longname": "Precipitation Corrected"
+        }
+      }
+    }
+  ],
+  "layers": []
+}

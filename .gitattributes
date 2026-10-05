@@ -1,2 +1,5 @@
 southern-zone-260806.osm.pbf filter=lfs diff=lfs merge=lfs -text
 Data/processed/osm/thanjavur_roads.geojson filter=lfs diff=lfs merge=lfs -text
+
+# Deployment seed checksums require identical bytes on Windows and Linux.
+deployment/seed/** -text whitespace=cr-at-eol

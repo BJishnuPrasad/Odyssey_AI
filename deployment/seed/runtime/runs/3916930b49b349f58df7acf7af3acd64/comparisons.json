@@ -1,0 +1,138 @@
+{
+  "method_version": "blocked-case-control-1",
+  "results": {
+    "satellite:surface_water_presence": {
+      "status": "Insufficient comparison samples",
+      "samples": 10,
+      "accuracy": null,
+      "auc": null,
+      "requirement": "At least 20 usable samples selected across spatial blocks and both outcome classes are required.",
+      "method_version": "blocked-case-control-1",
+      "source": "satellite",
+      "target": "surface_water_presence",
+      "note": "Independent Landsat/JRC reference; one sample per approximately 2 km block, persistent water≥90% prioritized, dry=0%, intermediate occurrence excluded. Equal wet/dry blocks selected with a fixed seed without inspecting terrain scores. Case/control metrics (including precision) do not represent district prevalence. This tests surface-water association, not storage capacity or archaeology. Adjacent blocks can remain spatially correlated.",
+      "points": [
+        {
+          "x": 310375.0,
+          "y": 1213375.0,
+          "observed": 0,
+          "score": 0.7225,
+          "longitude": 79.26461855527683,
+          "latitude": 10.971501404055882
+        },
+        {
+          "x": 282875.0,
+          "y": 1204375.0,
+          "observed": 0,
+          "score": 0.7271,
+          "longitude": 79.01358809544767,
+          "latitude": 10.888616974820398
+        },
+        {
+          "x": 310375.0,
+          "y": 1181375.0,
+          "observed": 0,
+          "score": 0.6627,
+          "longitude": 79.26628309339995,
+          "latitude": 10.6822233865001
+        },
+        {
+          "x": 310375.0,
+          "y": 1151375.0,
+          "observed": 0,
+          "score": 0.7917,
+          "longitude": 79.26780088210502,
+          "latitude": 10.411020162476277
+        },
+        {
+          "x": 300375.0,
+          "y": 1141375.0,
+          "observed": 0,
+          "score": 0.7231,
+          "longitude": 79.17700638545674,
+          "latitude": 10.320115462052359
+        },
+        {
+          "x": 311375.0,
+          "y": 1132875.0,
+          "observed": 1,
+          "score": 0.6741,
+          "longitude": 79.27784350207577,
+          "latitude": 10.243824242124667
+        },
+        {
+          "x": 310625.0,
+          "y": 1132125.0,
+          "observed": 1,
+          "score": 0.746,
+          "longitude": 79.27103484904178,
+          "latitude": 10.237007692376709
+        },
+        {
+          "x": 311375.0,
+          "y": 1129125.0,
+          "observed": 1,
+          "score": 0.7636,
+          "longitude": 79.27802619335091,
+          "latitude": 10.209922969447126
+        },
+        {
+          "x": 310125.0,
+          "y": 1128125.0,
+          "observed": 1,
+          "score": 0.7383,
+          "longitude": 79.26666736868327,
+          "latitude": 10.200822254310014
+        },
+        {
+          "x": 308875.0,
+          "y": 1126875.0,
+          "observed": 1,
+          "score": 0.7806,
+          "longitude": 79.25532150730241,
+          "latitude": 10.18946118272141
+        }
+      ],
+      "crs": "EPSG:32644"
+    },
+    "field:surface_water_presence": {
+      "status": "Insufficient comparison samples",
+      "samples": 0,
+      "accuracy": null,
+      "auc": null,
+      "requirement": "At least 20 usable samples selected across spatial blocks and both outcome classes are required.",
+      "method_version": "blocked-case-control-1",
+      "source": "field",
+      "target": "surface_water_presence",
+      "note": "User-supplied outcome observations, one usable record per 2 km block. Provenance and independence are declared by the contributor, not independently certified. No model fitting uses these labels.",
+      "points": [],
+      "crs": "EPSG:32644"
+    },
+    "field:water_storage_suitability": {
+      "status": "Insufficient comparison samples",
+      "samples": 0,
+      "accuracy": null,
+      "auc": null,
+      "requirement": "At least 20 usable samples selected across spatial blocks and both outcome classes are required.",
+      "method_version": "blocked-case-control-1",
+      "source": "field",
+      "target": "water_storage_suitability",
+      "note": "User-supplied outcome observations, one usable record per 2 km block. Provenance and independence are declared by the contributor, not independently certified. No model fitting uses these labels.",
+      "points": [],
+      "crs": "EPSG:32644"
+    },
+    "field:archaeological_presence": {
+      "status": "Insufficient comparison samples",
+      "samples": 0,
+      "accuracy": null,
+      "auc": null,
+      "requirement": "At least 20 usable samples selected across spatial blocks and both outcome classes are required.",
+      "method_version": "blocked-case-control-1",
+      "source": "field",
+      "target": "archaeological_presence",
+      "note": "User-supplied outcome observations, one usable record per 2 km block. Provenance and independence are declared by the contributor, not independently certified. No model fitting uses these labels.",
+      "points": [],
+      "crs": "EPSG:32644"
+    }
+  }
+}

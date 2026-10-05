@@ -9,3 +9,6 @@ frontend/dist/
 *.log
 .env
 artifacts/
+
+!deployment/seed/runtime/
+!deployment/seed/runtime/**
