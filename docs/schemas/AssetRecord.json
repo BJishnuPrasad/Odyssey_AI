@@ -1,0 +1,92 @@
+{
+  "properties": {
+    "schema_version": {
+      "const": 1,
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "site_id": {
+      "title": "Site Id",
+      "type": "string"
+    },
+    "tier": {
+      "enum": [
+        1,
+        3
+      ],
+      "title": "Tier",
+      "type": "integer"
+    },
+    "kind": {
+      "enum": [
+        "procedural",
+        "glb"
+      ],
+      "title": "Kind",
+      "type": "string"
+    },
+    "sha256": {
+      "title": "Sha256",
+      "type": "string"
+    },
+    "generator_version": {
+      "title": "Generator Version",
+      "type": "string"
+    },
+    "confidence": {
+      "title": "Confidence",
+      "type": "string"
+    },
+    "caveat": {
+      "title": "Caveat",
+      "type": "string"
+    },
+    "source": {
+      "title": "Source",
+      "type": "string"
+    },
+    "created_at": {
+      "title": "Created At",
+      "type": "string"
+    },
+    "url": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Url"
+    },
+    "scene": {
+      "anyOf": [
+        {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Scene"
+    }
+  },
+  "required": [
+    "site_id",
+    "tier",
+    "kind",
+    "sha256",
+    "generator_version",
+    "confidence",
+    "caveat",
+    "source",
+    "created_at"
+  ],
+  "title": "AssetRecord",
+  "type": "object"
+}

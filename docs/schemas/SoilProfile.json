@@ -1,0 +1,263 @@
+{
+  "$defs": {
+    "SoilLayer": {
+      "additionalProperties": false,
+      "properties": {
+        "top_cm": {
+          "minimum": 0,
+          "title": "Top Cm",
+          "type": "number"
+        },
+        "bottom_cm": {
+          "exclusiveMinimum": 0,
+          "maximum": 100000,
+          "title": "Bottom Cm",
+          "type": "number"
+        },
+        "label": {
+          "maxLength": 200,
+          "title": "Label",
+          "type": "string"
+        },
+        "sand_pct": {
+          "anyOf": [
+            {
+              "maximum": 100,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sand Pct"
+        },
+        "silt_pct": {
+          "anyOf": [
+            {
+              "maximum": 100,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Silt Pct"
+        },
+        "clay_pct": {
+          "anyOf": [
+            {
+              "maximum": 100,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Clay Pct"
+        },
+        "bulk_density_g_cm3": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "maximum": 5,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Bulk Density G Cm3"
+        },
+        "organic_carbon_g_kg": {
+          "anyOf": [
+            {
+              "maximum": 1000,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Organic Carbon G Kg"
+        }
+      },
+      "required": [
+        "top_cm",
+        "bottom_cm",
+        "label"
+      ],
+      "title": "SoilLayer",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": 1,
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "site_id": {
+      "title": "Site Id",
+      "type": "string"
+    },
+    "source_kind": {
+      "enum": [
+        "unavailable",
+        "soilgrids",
+        "borehole",
+        "trench",
+        "gpr",
+        "resistivity"
+      ],
+      "title": "Source Kind",
+      "type": "string"
+    },
+    "source": {
+      "maxLength": 1000,
+      "minLength": 1,
+      "title": "Source",
+      "type": "string"
+    },
+    "source_url": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source Url"
+    },
+    "retrieved_at": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Retrieved At"
+    },
+    "resolution_m": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Resolution M"
+    },
+    "confidence": {
+      "enum": [
+        "unavailable",
+        "model estimate",
+        "field data supplied"
+      ],
+      "title": "Confidence",
+      "type": "string"
+    },
+    "caveat": {
+      "maxLength": 3000,
+      "minLength": 1,
+      "title": "Caveat",
+      "type": "string"
+    },
+    "layers": {
+      "items": {
+        "$ref": "#/$defs/SoilLayer"
+      },
+      "maxItems": 100,
+      "minItems": 1,
+      "title": "Layers",
+      "type": "array"
+    },
+    "bedrock_depth_cm": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Bedrock Depth Cm"
+    },
+    "bedrock_evidence": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Bedrock Evidence"
+    },
+    "cultural_layer_cm": {
+      "anyOf": [
+        {
+          "maxItems": 2,
+          "minItems": 2,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Cultural Layer Cm"
+    },
+    "cultural_layer_evidence": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Cultural Layer Evidence"
+    }
+  },
+  "required": [
+    "site_id",
+    "source_kind",
+    "source",
+    "confidence",
+    "caveat",
+    "layers"
+  ],
+  "title": "SoilProfile",
+  "type": "object"
+}

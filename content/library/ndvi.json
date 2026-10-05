@@ -1,0 +1,14 @@
+{
+  "id": "ndvi",
+  "kind": "glossary",
+  "title": "NDVI · Normalized difference vegetation index",
+  "summary": "A ratio of near-infrared and red reflectance used to describe vegetation signals.",
+  "body": "NDVI = (NIR − red) / (NIR + red). Clouds, season, irrigation and land cover influence the result. Crop marks may guide investigation but do not establish buried archaeology. Four dated 2025 Sentinel-2 mosaics are available on the Environmental evidence page, with cloud masks and acquisition dates. They provide context and do not change the terrain score.",
+  "tags": [
+    "satellite",
+    "vegetation"
+  ],
+  "references": [
+    "https://www.usgs.gov/landsat-missions/landsat-normalized-difference-vegetation-index"
+  ]
+}

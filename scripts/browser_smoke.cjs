@@ -1,0 +1,55 @@
+const { createRequire } = require('node:module');
+const path = require('node:path');
+const fs = require('node:fs');
+const assert = require('node:assert/strict');
+const requireFrontend = createRequire(path.resolve(__dirname, '../frontend/package.json'));
+const { chromium } = process.env.PLAYWRIGHT_MODULE ? require(process.env.PLAYWRIGHT_MODULE) : requireFrontend('playwright');
+
+(async () => {
+  const browser = await chromium.launch({ headless: true, channel: process.env.PLAYWRIGHT_CHANNEL || 'msedge' });
+  const page = await browser.newPage({ viewport: { width: 1440, height: 1080 }, deviceScaleFactor: 1 });
+  const errors = [];
+  page.on('pageerror', e => errors.push(e.message));
+  const output = path.resolve(__dirname, '../artifacts');
+  fs.mkdirSync(output, { recursive: true });
+  try {
+    await page.goto('http://127.0.0.1:8000', { waitUntil: 'networkidle' });
+    await page.getByRole('heading', { name: 'Read the landscape.' }).waitFor();
+    await page.getByRole('link', { name: 'GeoTIFF', exact: true }).waitFor();
+    await page.screenshot({ path: path.join(output, 'desktop.png'), fullPage: true });
+    await page.getByRole('button', { name: 'Evidence assessment', exact: true }).click();
+    await page.getByRole('heading', { name: 'Insufficient data', exact: true }).waitFor();
+    await page.getByRole('button', { name: 'Data & evidence', exact: true }).click();
+    await page.getByRole('heading', { name: 'Source catalogue' }).waitFor();
+    assert(await page.getByText('Rainfall time series', { exact: true }).isVisible());
+    await page.getByRole('button', { name: 'Settlement context', exact: true }).click();
+    await page.getByRole('heading', { name: 'Recorded heritage locations' }).waitFor();
+    await page.getByRole('button', { name: 'Locate Brihadishwara Temple', exact: true }).click();
+    await page.getByRole('heading', { name: 'Read the landscape.' }).waitFor();
+    const waterResponse = page.waitForResponse(r => r.url().includes('/api/layers/water') && r.status() === 200);
+    await page.getByRole('checkbox', { name: 'Mapped water' }).check();
+    await waterResponse;
+    await page.waitForTimeout(1700);
+    const mapBox = await page.locator('.leaflet-container').boundingBox();
+    await page.mouse.click(mapBox.x + mapBox.width/2 + 30, mapBox.y + mapBox.height/2 + 30);
+    await page.locator('.inspector').getByText('Elevation', { exact: true }).waitFor();
+    await page.getByRole('button', { name: 'Methodology', exact: true }).click();
+    await page.getByRole('heading', { name: 'Source fingerprints' }).waitFor();
+    await page.getByRole('button', { name: 'Analysis history', exact: true }).click();
+    await page.getByRole('heading', { name: 'Reproducible analysis history' }).waitFor();
+    await page.getByRole('button', { name: 'Research atlas', exact: true }).click();
+    await page.getByRole('button', { name: 'Terrain potential', exact: true }).click();
+    await page.getByRole('button', { name: 'New analysis', exact: true }).click();
+    await page.getByLabel('Analysis grid').selectOption('500');
+    await page.getByRole('button', { name: 'Start analysis', exact: true }).click();
+    await page.getByText('500 m grid', { exact: true }).waitFor({ timeout: 120000 });
+    const [download] = await Promise.all([page.waitForEvent('download'), page.getByRole('link', { name: 'GeoTIFF', exact: true }).click()]);
+    await download.saveAs(path.join(output, 'browser-export.tif'));
+    assert(fs.statSync(path.join(output, 'browser-export.tif')).size > 1000);
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.screenshot({ path: path.join(output, 'mobile.png'), fullPage: true });
+    assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'Mobile layout overflows');
+    assert.deepEqual(errors, [], 'Browser runtime errors');
+    console.log('Browser smoke passed: navigation, evidence, heritage, water layer, run creation, export, mobile layout.');
+  } finally { await browser.close(); }
+})().catch(error => { console.error(error); process.exitCode = 1; });

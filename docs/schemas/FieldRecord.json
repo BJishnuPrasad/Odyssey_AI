@@ -1,0 +1,75 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "maxLength": 100,
+      "minLength": 1,
+      "title": "Id",
+      "type": "string"
+    },
+    "longitude": {
+      "maximum": 180,
+      "minimum": -180,
+      "title": "Longitude",
+      "type": "number"
+    },
+    "latitude": {
+      "maximum": 90,
+      "minimum": -90,
+      "title": "Latitude",
+      "type": "number"
+    },
+    "observed_on": {
+      "format": "date",
+      "title": "Observed On",
+      "type": "string"
+    },
+    "target": {
+      "enum": [
+        "surface_water_presence",
+        "water_storage_suitability",
+        "archaeological_presence",
+        "infiltration_mm_h"
+      ],
+      "title": "Target",
+      "type": "string"
+    },
+    "value": {
+      "maximum": 100000,
+      "minimum": 0,
+      "title": "Value",
+      "type": "number"
+    },
+    "source": {
+      "maxLength": 1000,
+      "minLength": 8,
+      "title": "Source",
+      "type": "string"
+    },
+    "method": {
+      "maxLength": 1000,
+      "minLength": 8,
+      "title": "Method",
+      "type": "string"
+    },
+    "independence_statement": {
+      "maxLength": 2000,
+      "minLength": 15,
+      "title": "Independence Statement",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "longitude",
+    "latitude",
+    "observed_on",
+    "target",
+    "value",
+    "source",
+    "method",
+    "independence_statement"
+  ],
+  "title": "FieldRecord",
+  "type": "object"
+}

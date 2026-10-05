@@ -1,0 +1,130 @@
+{
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "kind": {
+      "const": "site",
+      "default": "site",
+      "title": "Kind",
+      "type": "string"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "region": {
+      "title": "Region",
+      "type": "string"
+    },
+    "period": {
+      "title": "Period",
+      "type": "string"
+    },
+    "typology": {
+      "title": "Typology",
+      "type": "string"
+    },
+    "confidence": {
+      "title": "Confidence",
+      "type": "string"
+    },
+    "summary": {
+      "title": "Summary",
+      "type": "string"
+    },
+    "aliases": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Aliases",
+      "type": "array"
+    },
+    "references": {
+      "default": [],
+      "items": {
+        "additionalProperties": {
+          "type": "string"
+        },
+        "type": "object"
+      },
+      "title": "References",
+      "type": "array"
+    },
+    "coordinates": {
+      "maxItems": 2,
+      "minItems": 2,
+      "prefixItems": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "title": "Coordinates",
+      "type": "array"
+    },
+    "osm_id": {
+      "title": "Osm Id",
+      "type": "string"
+    },
+    "location_quality": {
+      "title": "Location Quality",
+      "type": "string"
+    },
+    "height_m": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Height M"
+    },
+    "height_basis": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Height Basis"
+    },
+    "checked_on": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Checked On"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "region",
+    "period",
+    "typology",
+    "confidence",
+    "summary",
+    "coordinates",
+    "osm_id",
+    "location_quality"
+  ],
+  "title": "SiteProfile",
+  "type": "object"
+}

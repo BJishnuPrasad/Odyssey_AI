@@ -1,0 +1,150 @@
+{
+  "relation-6668806": {
+    "aliases": [
+      "Brihadeeswarar Temple",
+      "Brihadisvara",
+      "Big Temple",
+      "Peruvudaiyar Kovil"
+    ],
+    "typology": "temple",
+    "period": "Chola · 11th century",
+    "confidence": "documented history",
+    "summary": "An early eleventh-century Chola temple and a component of UNESCO's Great Living Chola Temples. The illustration simplifies the stepped vimana and hall; it does not reproduce carved detail or a surveyed plan.",
+    "references": [
+      {
+        "title": "UNESCO · Great Living Chola Temples",
+        "url": "https://whc.unesco.org/en/list/250/"
+      },
+      {
+        "title": "Thanjavur District · Tower dimensions and reference photographs",
+        "url": "https://thanjavur.nic.in/tourist-place/big-brihadeeshwara-temple/"
+      }
+    ],
+    "checked_on": "2026-10-04",
+    "height_m": 64.8,
+    "height_basis": "About 64.8 m reported by Thanjavur District; the model is an architectural approximation."
+  },
+  "relation-8341173": {
+    "aliases": [
+      "Thanjavur Palace",
+      "Tanjore Palace",
+      "Aranmanai"
+    ],
+    "typology": "palace",
+    "period": "Nayak / Maratha",
+    "confidence": "documented history",
+    "summary": "A palace complex with Nayak and Maratha building phases. Its halls and towers reflect multiple periods; a single construction date would conceal that history. The displayed courtyard arrangement is illustrative.",
+    "references": [
+      {
+        "title": "Thanjavur District · Palace history and photo gallery",
+        "url": "https://thanjavur.nic.in/tourist-place/thanjavur-palace/"
+      }
+    ],
+    "checked_on": "2026-10-04"
+  },
+  "relation-8345043": {
+    "aliases": [
+      "Airavatesvara Temple",
+      "Airavateswarar",
+      "Darasuram Temple"
+    ],
+    "typology": "temple",
+    "period": "Chola · 12th century",
+    "confidence": "documented history",
+    "summary": "The Darasuram temple is a twelfth-century component of UNESCO's Great Living Chola Temples. Its architectural detail is not captured by this generic stepped-tower illustration.",
+    "references": [
+      {
+        "title": "UNESCO · Great Living Chola Temples",
+        "url": "https://whc.unesco.org/en/list/250/"
+      },
+      {
+        "title": "Thanjavur District · Official photo galleries",
+        "url": "https://thanjavur.nic.in/photo-gallery/"
+      }
+    ],
+    "checked_on": "2026-10-04"
+  },
+  "way-104683753": {
+    "aliases": [
+      "Kallanai Dam",
+      "Grand Anicut"
+    ],
+    "typology": "dam",
+    "period": "Early Chola · traditional attribution",
+    "confidence": "documented history",
+    "summary": "The district administration attributes the ancient Grand Anicut to Karikala Chola. The extant irrigation works include later interventions; this attribution does not date every visible structure.",
+    "references": [
+      {
+        "title": "Thanjavur District · Grand Anicut history and photographs",
+        "url": "https://thanjavur.nic.in/tourist-place/grand-anicut-canal/"
+      },
+      {
+        "title": "District Water Resources Department · Present distribution system",
+        "url": "https://thanjavur.nic.in/pwd-water-resources-department-wrd/"
+      }
+    ],
+    "checked_on": "2026-10-04"
+  },
+  "way-555516027": {
+    "aliases": [
+      "Manora Tower",
+      "Manora"
+    ],
+    "typology": "fort",
+    "period": "Maratha · 1814–1815",
+    "confidence": "documented history",
+    "height_m": 23,
+    "height_basis": "About 23 m, reported by Thanjavur District; not a measured survey in this app.",
+    "summary": "The district describes an eight-storey hexagonal tower built under Serfoji II in 1814–1815. This reconstruction uses that broad form and reported height, with illustrative widths and surroundings.",
+    "references": [
+      {
+        "title": "Thanjavur District · Manora Fort history, dimensions and photographs",
+        "url": "https://thanjavur.nic.in/tourist-place/manora-fort/"
+      }
+    ],
+    "checked_on": "2026-10-04"
+  },
+  "way-592802648": {
+    "aliases": [
+      "Darasuram Gopuram"
+    ],
+    "typology": "tower",
+    "period": "Unknown",
+    "confidence": "limited documentation",
+    "summary": "OSM records a gopuram near the Darasuram temple. Proximity does not independently establish its date or construction phase. The temple's UNESCO documentation provides regional context only.",
+    "references": [
+      {
+        "title": "UNESCO · Temple context, not a date for this gateway",
+        "url": "https://whc.unesco.org/en/list/250/"
+      }
+    ]
+  },
+  "node-3688301041": {
+    "aliases": [
+      "Karikala Cholan Mandapam",
+      "Karikalan Memorial"
+    ],
+    "typology": "memorial",
+    "period": "Unknown",
+    "confidence": "limited documentation",
+    "summary": "A mapped memorial near Kallanai. The era of the ruler commemorated is not the date of this memorial. No independently matched architectural survey or construction date has been acquired."
+  },
+  "node-11831919109": {
+    "aliases": [
+      "Raja Raja Chozhan Memorial"
+    ],
+    "typology": "memorial",
+    "period": "Unknown",
+    "confidence": "limited documentation",
+    "summary": "An OSM memorial record south of Kumbakonam. It has not been equated with the similarly named Raja Rajan Mani Mandapam in Thanjavur city; that would be a different location. Construction date and geometry remain unverified."
+  },
+  "node-12078431209": {
+    "aliases": [
+      "Punitha Vanattha Chinnappar"
+    ],
+    "typology": "shrine",
+    "period": "Unknown",
+    "confidence": "limited documentation",
+    "summary": "A wayside-shrine record in the supplied OSM inventory. No independently matched period, architectural plan or subsurface investigation has been acquired. The pavilion illustration indicates a place type only."
+  }
+}

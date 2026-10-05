@@ -6,8 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "oxlint",
-    "preview": "vite preview"
+    "lint": "oxlint src/GeoDyssey.jsx src/api.js src/components/Atlas.jsx src/components/HeritageLibrary.jsx src/components/SiteModel.jsx src/main.jsx vite.config.js src/components/EnvironmentEvidence.jsx src/components/ApiStatus.jsx",
+    "test:browser": "node ../scripts/browser_smoke.cjs",
+    "preview": "vite preview",
+    "test:heritage": "node ../scripts/heritage_browser.cjs",
+    "test:environment": "node ../scripts/environment_browser.cjs",
+    "test:recovery": "node ../scripts/recovery_browser.cjs"
   },
   "dependencies": {
     "leaflet": "^1.9.4",
@@ -15,13 +19,15 @@
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-leaflet": "^5.0.0",
-    "recharts": "^3.10.1"
+    "recharts": "^3.10.1",
+    "three": "^0.186.1"
   },
   "devDependencies": {
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.7",
     "@vitejs/plugin-react": "^6.1.1",
     "oxlint": "^1.81.0",
+    "playwright": "^1.63.0",
     "vite": "^8.3.0"
   }
 }

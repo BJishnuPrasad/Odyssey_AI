@@ -1,0 +1,13 @@
+{
+  "id": "palaeochannels",
+  "kind": "glossary",
+  "title": "Palaeochannel detection",
+  "summary": "Identifying traces of former river courses using multiple kinds of evidence.",
+  "body": "Historical maps, terrain, sediment observations and seasonal imagery can suggest abandoned channels. A linear image feature alone is not proof, and a modern mapped river is not a reconstruction of its ancient course. Dated sediment and field evidence are needed to support chronology. The app displays JRC water transitions from 1984–2024 and accepts sourced historical-map GeoJSON interpretations. Lost-water pixels are investigation leads, not confirmed palaeochannels or an active score input.",
+  "tags": [
+    "history",
+    "water",
+    "satellite"
+  ],
+  "references": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "sources",
+  "kind": "reference",
+  "title": "Primary heritage and geospatial sources",
+  "summary": "Official heritage context, mapped geometry and environmental data discovery.",
+  "body": "UNESCO and Thanjavur District provide site histories and reference photographs. OSM provides mapped locations and outlines under ODbL. The local environmental collection includes NASA POWER rainfall, ISRIC SoilGrids model estimates, dated Sentinel-2 Collection 1 scenes via Earth Search, and JRC historical surface-water maps. Source manifests retain dates, coverage and checksums. Soil predictions and satellite observations do not certify archaeological strata or storage capacity. ISRO Bhuvan and ASI remain discovery references rather than ingested datasets. Official photographs are reference material, not an acquired photogrammetry capture set.",
+  "tags": [
+    "sources",
+    "heritage",
+    "satellite",
+    "soil"
+  ],
+  "references": [
+    "https://whc.unesco.org/en/list/250/",
+    "https://thanjavur.nic.in/photo-gallery/",
+    "https://www.openstreetmap.org/copyright",
+    "https://docs.isric.org/globaldata/soilgrids/index.html",
+    "https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-shuttle-radar-topography-mission-srtm",
+    "https://sentiwiki.copernicus.eu/web/s2-mission",
+    "https://bhuvan.nrsc.gov.in/",
+    "https://asi.nic.in/",
+    "https://power.larc.nasa.gov/docs/services/api/temporal/daily/",
+    "https://github.com/Element84/earth-search/blob/main/README.md",
+    "https://global-surface-water.appspot.com/download"
+  ]
+}
