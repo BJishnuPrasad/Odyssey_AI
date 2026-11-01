@@ -2,9 +2,11 @@
 
 A local React + FastAPI workspace for exploring terrain, mapped water and heritage context. Adapted from `BJishnuPrasad/Odyssey_AI` at `6946a64`. This implementation replaces the disconnected demonstration dashboard with real, versioned analysis results.
 
-## Free Render deployment
+## Live website deployment
 
-[Deploy the free demonstration](https://render.com/deploy?repo=https://github.com/BJishnuPrasad/Odyssey_AI). Read the [setup and free-tier limitations](docs/RENDER.md): the service sleeps and new uploads/results are temporary. No paid disk or database is configured.
+[Import the website into Vercel](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FBJishnuPrasad%2FOdyssey_AI) · [Deploy the free FastAPI backend on Render](https://render.com/deploy?repo=https://github.com/BJishnuPrasad/Odyssey_AI)
+
+The Vercel import becomes the public website. After it deploys, add its generated URL here as **Live website**. Deploy the backend first and see [Vercel + Render setup](docs/VERCEL.md) and [Render free-tier limitations](docs/RENDER.md). The Render API sleeps when idle; uploaded files and new results are temporary on its free filesystem.
 
 ## Start on this computer
 
