@@ -4,9 +4,9 @@ A local React + FastAPI workspace for exploring terrain, mapped water and herita
 
 ## Live website deployment
 
-[Import the website into Vercel](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FBJishnuPrasad%2FOdyssey_AI) · [Deploy the free FastAPI backend on Render](https://render.com/deploy?repo=https://github.com/BJishnuPrasad/Odyssey_AI)
+[Open the live GeoDyssey website](https://geodyssey.onrender.com)
 
-The Vercel import becomes the public website. After it deploys, add its generated URL here as **Live website**. Deploy the backend first and see [Vercel + Render setup](docs/VERCEL.md) and [Render free-tier limitations](docs/RENDER.md). The Render API sleeps when idle; uploaded files and new results are temporary on its free filesystem.
+The complete app (React frontend and FastAPI backend) runs as one free Render web service. See [Render free-tier limitations](docs/RENDER.md). The service sleeps when idle; uploaded files and new results are temporary on its free filesystem.
 
 ## Start on this computer
 
