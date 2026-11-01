@@ -9,6 +9,7 @@ FROM python:3.12-slim-bookworm
 ENV PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1 \
     GEODYSSEY_RUNTIME=/tmp/geodyssey GDAL_CACHEMAX=64
 WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends libexpat1 && rm -rf /var/lib/apt/lists/*
 COPY requirements-lock.txt ./
 RUN pip install --no-cache-dir --only-binary=:all: -r requirements-lock.txt
 COPY backend/ ./backend/
